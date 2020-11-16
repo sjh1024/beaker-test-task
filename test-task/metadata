@@ -1,0 +1,16 @@
+[General]
+name=/CoreOS/test-task
+owner=shall@ofa.iol.unh.edu
+description=test task
+license=GPLv2+
+confidential=no
+destructive=no
+
+[restraint]
+entry_point=./runtest.sh
+max_time=60m
+dependencies=gcc
+no_localwatchdog=true
+use_pty=false
+
+
